@@ -24,9 +24,10 @@ initiate a boolean array to store the status of each process
 initiate a contextSwitchCount of 0
 
 2.	run Round Robin Scheduling Algorithm to obtain completionTime and cpuUtilization
-#while loop to increase arrival by 1when counter != throughput
-#    traverse the remainingTime array with index i using for loop
-#	if updatedArrivalTime[i] <= arrival && completed[i] == false
+```
+while loop to increase arrival by 1when counter != throughput
+    traverse the remainingTime array with index i using for loop
+    	if updatedArrivalTime[i] <= arrival && completed[i] == false
 		cpu.getProcess(processId[i])
 		contextSwitchCount ++
 		if remainingTime[i] <= timeQuantum
@@ -40,6 +41,7 @@ initiate a contextSwitchCount of 0
 			time += timeQuantum
 			updatedArrivalTime[i] = time + 1
 arrival++
+```
 
 3.	compute the values for turnaroundTime
 turnaroundTime[i] = competionTime[i] – arrivalTime[i]
