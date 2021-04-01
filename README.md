@@ -44,9 +44,13 @@ arrival++
 ```
 
 3.	compute the values for turnaroundTime
+```
 turnaroundTime[i] = competionTime[i] – arrivalTime[i]
+```
 
 4.	compute the values for waitingTime
+```
 waitingTime[i] = turnaroundTime[i] – burstTime[i]
+```
 
 5.	compute the average turnaround time and waiting time
